@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> TOOL API CHECKER </title>
+    <link href="../main.css" rel="stylesheet">
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <div class="container">
+        <div class="tool-title">
+            TOOL API CHECKER VERSI ANGULAR JS
+        </div>
+        <div class="alert" id="tes">
+            asdasdasd
+        </div>
+        <form>     
+            <div class="form-group">
+                <input type="text" ng-model="url" class="input_text" placeholder="Please Input URL">
+            </div>
+            <div class="form-group">
+                <textarea ng-model="param" cols="120" rows="15" class="input_textarea" placeholder="Please Input Parameters"></textarea>
+            </div>
+            <div class="button">
+                <button class="btn" ng-click="processForm()">
+                    <span>Process</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <pre>
+        {{ result }}
+    </pre>
+    
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

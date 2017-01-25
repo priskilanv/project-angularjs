@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Submit Data</title>
+    <link href="http://192.168.0.253/priskila/angularjs/postdata/main.css" rel="stylesheet">
+    
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/5790ab7293.js"></script>
+</head>
+<body ng-app="NewsApp" ng-controller="NewsController">
+    <div class="container">
+        <div class="body-form">
+            <div class="body-title">
+                <i class="fa fa-pencil-square-o icon" aria-hidden="true"></i>
+                <h5 class="title">FORM SUBMIT WITH ANGULAR JS</h5>
+            </div>
+            <div class="form">
+                <div class="form-group">
+                    <label class="word">Title</label>
+                    <input type="text" class="form-control" name="title" ng-model="title">
+                </div>
+                <div class="form-group">
+                    <label class="word">Category</label>
+                    <input type="text" class="form-control" name="category" ng-model="category">
+                </div>
+                <div class="form-group">
+                    <label class="word">Synopsis</label>
+                    <textarea name="synopsis" rows="10" class="form-control textarea" ng-model="synopsis"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="word">News</label>
+                    <textarea name="news" rows="10" class="form-control textarea" ng-model="news"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="word">Tag</label>
+                    <input type="text" class="form-control" name="tag" ng-model="tag">
+                </div>
+            </div>
+            <button type="button" class="btn" ng-click="SendData()">Submit</button>
+            
+        </div>
+    </div>
+    
+    <!-- Angular -->
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js" type="text/javascript"></script>
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Module -->
+    <script src="http://192.168.0.253:81/priskila/angularjs/postdata/js/app.js"></script>
+    
+    <!-- Controller -->
+    <script src="http://192.168.0.253:81/priskila/angularjs/postdata/js/MainController.js"></script>
+    
+</body>
+</html>
