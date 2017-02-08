@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title> TOOL JSON FORMATTER </title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body ng-app="app" ng-controller="JSONController">
+    <div class="container">
+        <div class="tool-title">
+            Tool JSON Formatter Versi Angular JS
+        </div>
+        <div class="alert">
+            
+        </div>
+        <div class="form">
+            <div class="form-group">
+                <textarea name="input" cols="120" rows="15" class="input_textarea" ng-model="input_url" placeholder="Please Input JSON Data/URL"></textarea>
+            </div>
+            <div class="button">
+                <button class="btn" ng-click="SubmitJson()">
+                    <span>Process</span>
+                </button>
+            </div>
+        </div>
+        <div class="tool-title">
+            <span class="result-title">Result : </span>
+        </div>
+    </div>
+    
+    <script src="http://192.168.0.253/priskila/angular-import/angular.min.js"></script>
+    <script src="http://192.168.0.253/priskila/angular-import/angular-route.min.js"></script>
+    
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/module/app.js"></script>
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/controller/MainController.js"></script>
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/services/Service.js"></script>
+    
+</body>
+</html>

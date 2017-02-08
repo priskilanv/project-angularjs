@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Angular JS Testing</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+    <div class="container">
+        <div class="wrap">
+            <div class="tool-title home">
+                Choose Tool What You Need
+            </div>
+            <ul class="list list-unstyled clearfix">
+                <li>
+                    <a href="api_checker" class="box api_checker" ng-click="collapsed=!collapsed">
+                            API Checker
+                    </a>
+                </li>
+                <li>
+                    <a href="json_formatter" class="box json">
+                            JSON Formatter
+                    </a>
+                </li>
+            </ul>
+            
+            <div ng-view></div>
+            
+            <script type ="text/ng-template" id="api_checker" ng-controller="APIController">
+                <!--<div class="body-apichecker" ng-controller="APIController" ng-show="collapsed">
+                    
+                </div>-->
+            </script>
+             
+            <script type ="text/ng-template" id="json_formatter" ng-controller="JSONController">
+               <!--<div class="body-apichecker" ng-controller="JSONController" ng-show="collapsed">
+                    
+                </div>-->
+            </script>
+        </div>
+    </div>
+    
+    <script src="http://192.168.0.253/priskila/angular-import/angular.min.js"></script>
+    <script src="http://192.168.0.253/priskila/angular-import/angular-route.min.js"></script>
+    
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/module/app.js"></script>
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/controller/MainController.js"></script>
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/services/Service.js"></script>
+    
+</body>
+</html>

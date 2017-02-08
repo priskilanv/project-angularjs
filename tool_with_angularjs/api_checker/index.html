@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title> TOOL API CHECKER </title>
+    <link href="../main.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+    <div class="container" ng-controller="APIController">
+        <div class="tool-title">
+            TOOL API CHECKER VERSI ANGULAR JS
+        </div>
+        <div class="alert" id="tes">
+            
+        </div>
+        <form id="form">     
+            <div class="form-group">
+                <input type="text" ng-model="url" class="input_text" placeholder="Please Input URL">
+            </div>
+            <div class="form-group">
+                <textarea ng-model="param" cols="120" rows="15" class="input_textarea" placeholder="Please Input Parameters"></textarea>
+            </div>
+            <div class="button">
+                <button class="btn" ng-click="SubmitAPI()">
+                    <span>Process</span>
+                </button>
+            </div>
+        </form>
+        <div class="tool-title">
+            <span class="result-title">Result : </span>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="http://192.168.0.253/priskila/angular-import/angular.min.js"></script>
+    <script src="http://192.168.0.253/priskila/angular-import/angular-route.min.js"></script>
+    
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/module/app.js"></script>
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/controller/MainController.js"></script>
+    <script src="http://192.168.0.253/priskila/tool_with_angularjs/js/services/Service.js"></script>
+</body>
+</html>

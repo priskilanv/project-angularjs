@@ -7,7 +7,7 @@ app.controller('NewsController', function($scope, $http) {
             news : $scope.news,
             tag : $scope.tag
         });
-    
+        
         var config = {
             headers : {
                 'Content-Type' : 'application/x-www-form-urlencoded;charset=utf-8;'
